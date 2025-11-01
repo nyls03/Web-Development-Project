@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--FontAwesome-->
+    <script
+      src="https://kit.fontawesome.com/338473d98c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Edu-Tech</title>
+  </head>
+
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo123.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="Index.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Course.html">COURSE</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>Contact Us</h1>
+    </section>
+
+    <!-----------CONTACT US CONTENT--------------->
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62606.71757174593!2d124.9659205268018!3d11.26730216159605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33087727ff2f99dd%3A0xc3fb64480f0c8751!2sTacloban%20City%2C%20Leyte!5e0!3m2!1sen!2sph!4v1752340192250!5m2!1sen!2sph"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa-solid fa-house"></i>
+            <span>
+              <h5>Juan Luna Street, AccentSure Building</h5>
+              <p>Tacloban City, Leyte, VIII</p>
+            </span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <span>
+              <h5>#63 975 677 9072</h5>
+              <p>Monday to Saturday, 8AM to 6PM</p>
+            </span>
+          </div>
+
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+            <span>
+              <h5>Edu-Tech@gmail.com</h5>
+              <p>Email Us Your Query</p>
+            </span>
+          </div>
+        </div>
+
+        <div class="contact-col">
+          <form action="form-handler.php" method="post">
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter Your Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Email Address"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Enter Your Subject"
+              required
+            />
+            <textarea rows="8" name="message" placeholder="Message"></textarea>
+            <button type="submit" class="hero-btn color-btn">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-------------FOOTER ---------->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non,
+        distinctio voluptatibus. Minus dignissimos expedita illum <br />
+        laudantium. Delectus reprehenderit voluptates optio facilis! Quo eum ea
+        iste explicabo laborum dolore esse velit.
+      </p>
+
+      <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
+
+      <p>
+        Made by Nyls
+        <i class="fa-regular fa-heart"></i>
+      </p>
+    </section>
+
+    <!--JavaScript for Toggle Menu (Media)-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+
+     <!-- Chatbase Embed Script -->
+ <script>
+    (function(){
+      if(!window.chatbase || window.chatbase("getState")!=="initialized"){
+        window.chatbase=(...arguments)=>{
+          if(!window.chatbase.q){window.chatbase.q=[]}
+          window.chatbase.q.push(arguments)
+        };
+        window.chatbase=new Proxy(window.chatbase,{
+          get(target,prop){
+            if(prop==="q"){return target.q}
+            return(...args)=>target(prop,...args)
+          }
+        });
+      }
+      const onLoad=function(){
+        const script=document.createElement("script");
+        script.src="https://www.chatbase.co/embed.min.js";
+        script.id="m12DyGG35UT0vS6HEJo2o"; // ✅ YOUR updated Chatbase ID
+        script.domain="www.chatbase.co";
+        document.body.appendChild(script);
+      };
+      if(document.readyState==="complete"){
+        onLoad();
+      } else {
+        window.addEventListener("load",onLoad);
+      }
+    })();
+  </script>
+  </body>
+</html>

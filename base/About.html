@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--FontAwesome-->
+    <script
+      src="https://kit.fontawesome.com/338473d98c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Edu-Tech</title>
+  </head>
+
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo123.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+          <ul>
+            <li><a href="Index.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Course.html">COURSE</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>About Us</h1>
+    </section>
+
+    <!-----------ABOUT US CONTENT--------------->
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>Transforming Futures As The World' Largest University</h1>
+          <p>
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.”
+          </p>
+
+          <a href="" class="hero-btn color-btn">JOIN NOW</a>
+        </div>
+        <div class="about-col">
+          <img src="images/group.jfif" />
+        </div>
+      </div>
+    </section>
+
+    <!-------------FOOTER ---------->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non,
+        distinctio voluptatibus. Minus dignissimos expedita illum <br />
+        laudantium. Delectus reprehenderit voluptates optio facilis! Quo eum ea
+        iste explicabo laborum dolore esse velit.
+      </p>
+
+      <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
+
+      <p>
+        Made by Nyls
+        <i class="fa-regular fa-heart"></i>
+      </p>
+    </section>
+
+    <!--JavaScript for Toggle Menu (Media)-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+    <!-- Chatbase Embed Script -->
+   <script>
+    (function(){
+      if(!window.chatbase || window.chatbase("getState")!=="initialized"){
+        window.chatbase=(...arguments)=>{
+          if(!window.chatbase.q){window.chatbase.q=[]}
+          window.chatbase.q.push(arguments)
+        };
+        window.chatbase=new Proxy(window.chatbase,{
+          get(target,prop){
+            if(prop==="q"){return target.q}
+            return(...args)=>target(prop,...args)
+          }
+        });
+      }
+      const onLoad=function(){
+        const script=document.createElement("script");
+        script.src="https://www.chatbase.co/embed.min.js";
+        script.id="m12DyGG35UT0vS6HEJo2o"; // ✅ YOUR updated Chatbase ID
+        script.domain="www.chatbase.co";
+        document.body.appendChild(script);
+      };
+      if(document.readyState==="complete"){
+        onLoad();
+      } else {
+        window.addEventListener("load",onLoad);
+      }
+    })();
+  </script>
+  </body>
+</html>
