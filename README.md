@@ -11,7 +11,4 @@ Integrated ChatBot Ai, Powered by Chatbase
 Built a simple web project from scratch by following a YouTube tutorial and customizing various elements to reflect my own style. Although the project is not yet fully refined, it demonstrates my growing skills in web development. It may be a common beginner project, but it marks a meaningful step forward in my learning and development journey. 
 
 Stacks used: 
-Javascript
-HTML
-CSS
-AI API Integrated
+Javascript, HTML, CSS, AI API Integrated
