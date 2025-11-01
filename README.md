@@ -1,0 +1,2 @@
+# Web-Development-Project (Project Entry: July 13, 2025)
+ built a simple web project from scratch by following a YouTube tutorial and customizing various elements to reflect my own style. Although the project is not yet fully refined, it demonstrates my growing skills in web development. It may be a common beginner project, but it marks a meaningful step forward in my learning and development journey. 
